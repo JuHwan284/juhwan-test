@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <h2>My first JavaScript</h2>
+
+    <button type="button" onclick="document.getElementById('date').innerHTML = Date()">Clink Me!
+    </button>
+
+    <button type="button">버튼</button>
+
+    <p id="date">버튼을 클릭하면 현재 시간이 출력됩니다.</p>
+
+    <hr>
+
+    <h2>What can JavaScript Do?</h2>
+
+    <button type="button" onclick='document.getElementById("hello_p").innerHTML = "Hello JavaScript!"'>Click me!</button>
+
+    <p id="hello_p">버튼을 클릭해보세요.</p>
+
+    <hr>
+
+    <img id="poke_image" src="pokemon-1.jpg" style="width:300px">
+
+    <button onclick="document.getElementById('poke_image').src='pokemon-1.jpg'">피</button>
+
+    <button onclick="document.getElementById('poke_image').src='pokemon-2.jpg'">까!</button>
+
+    <hr>
+
+    <p id="font_size">Style</p>
+
+    <button onclick="document.getElementById('font_size').style.fontSize = '25px'">25px</button>
+
+    <button onclick="document.getElementById('font_size').style.fontSize = '40px'">40px</button>
+
+    <button onclick="document.getElementById('font_size').style.display = 'none'">안보이게 하기</button>
+
+    <button onclick="document.getElementById('font_size').style.display = 'block'">보이게 하기</button>
+
+    <button onclick="document.getElementById('font_size').style.color = 'red'">빨간색</button>
+
+    <button onclick="document.getElementById('font_size').style.color = 'blue'">파란색</button>
+
+    <hr>
+
+    <p id="demo3">A Paragraph</p>
+    <button type="button" onclick="myFunction()">Try it</button>
+
+    <script>
+        function myFunction() {
+            document.getElementById("demo3").innerHTML = "Paragraph changed.";
+        }
+    </script>
+
+    <hr>
+
+    <p id="demo_function_color01">Click the button to change the color of this paragraph.</p>
+    <button onclick="myFunction1()">Try it</button>
+
+    <script>
+        function myFunction1() {
+            var x =
+                document.getElementById("demo_function_color01");
+            x.style.color = "red";
+        }
+    </script>
+
+    <hr>
+
+    <script type="text/javascript">
+        function changeColor(newColor) {
+            elem = document.getElementById("paral");
+            elem.style.color = newColor;
+        }
+    </script>
+
+    <p id="paral">함수 매개변수 이용 컬러변경</p>
+
+    <button onclick="changeColor('blue');">blue</button>
+    <button onclick="changeColor('red');">red</button>
+
+    <hr>
+
+    <p id="demo4"></p>
+
+    <script>
+        document.getElementById("demo4").innerHTML = 5 + 6;
+    </script>
+
+    <hr>
+
+    <script>
+        document.write(5 + 6);
+        document.write("<br>test")
+    </script>
+
+    <hr>
+
+    <button onclick="document.write(5 + 6)">Try it</button>
+
+    <hr>
+
+    <script>
+        window.alert(5 + 6);
+    </script>
+
+    <hr>
+
+    <p id="demo5"></p>
+
+    <script>
+        var carName = "Volvo";
+        document.getElementById("demo5").innerHTML = carName;
+    </script>
+    
+    <hr>
+    
+    
+
+</body>
+
+</html>
